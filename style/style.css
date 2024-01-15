@@ -1,0 +1,378 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.container {
+    width: 81.25%;
+    max-width: 1560px;
+    margin: 0 auto;
+}
+
+body {
+    font-family: 'Mulish', sans-serif;
+}
+
+.btn-primary {
+    border-radius: 8px;
+    background: #FF5400;
+    border: none;
+    color: white;
+    /* padding: 16px 64px; */
+    width: 174px;
+    height: 52px;
+    font-weight: 700;
+}
+
+.hide {
+    display: none;
+}
+
+/* header section  */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3.25rem 0;
+}
+
+.header-logo {
+    display: flex;
+}
+
+.header-logo img {
+    width: 48px;
+    height: 56.008px;
+    flex-shrink: 0;
+}
+
+.header-logo h3 {
+    color: #131318;
+    font-size: 2.25rem;
+    font-weight: 800;
+}
+
+.header-logo span {
+    color: #FF5400;
+    font-size: 2.25rem;
+    font-weight: 800;
+}
+
+.header-manue {}
+
+.header-manue ul {
+    display: flex;
+    list-style: none;
+}
+
+.header-manue ul .unick-menu-item {
+    color: #FF5400;
+    font-size: 1.125rem;
+    font-weight: 700;
+}
+
+.header-manue ul li {
+    color: #424247;
+    font-family: Mulish;
+    font-size: 1.125rem;
+    font-weight: 400;
+    margin-right: 2.75rem;
+}
+
+/* banner section  */
+.banner-section {
+    text-align: center;
+    width: 1560px;
+    height: 500px;
+    border-radius: 16px;
+    background: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url("../Images/Group\ 13\ \(1\)\ \(1\).png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner-section h2 {
+    color: #FFF;
+    font-size: 64px;
+    font-weight: 800;
+    margin-bottom: 24px;
+    padding-top: 106px;
+}
+
+.banner-section p {
+    color: #FFF;
+    text-align: center;
+    line-height: 26px;
+    width: 676px;
+    margin: 0 auto;
+    margin-bottom: 48px;
+}
+
+.banner-button {
+    display: inline-flex;
+    padding: 16px;
+    align-items: flex-start;
+    gap: 24px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.30);
+}
+
+.banner-button input[type="text"],
+select {
+    width: 174px;
+    height: 52px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #FFF;
+    text-align: center;
+    margin-right: 24px;
+    border: none;
+    outline: none;
+}
+
+#When,
+#type {
+    color: rgba(19, 19, 24, 0.5);
+}
+
+/* Our Popular Tours section  */
+.Our-Popular-Tours {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 100px 0;
+}
+
+.Our-Popular-Tours-content {}
+
+.Our-Popular-Tours-content h4 {
+    color: #131318;
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 24px;
+}
+
+.o-p-t-c-first {
+    color: rgba(19, 19, 24, 0.70);
+    line-height: 26px;
+    width: 577px;
+}
+
+.Our-Popular-Tours-content ul {
+    margin: 24px 0;
+    margin-left: 20px;
+}
+
+.Our-Popular-Tours-content ul li {
+    color: rgba(19, 19, 24, 0.70);
+    line-height: 26px;
+    width: 525px;
+    margin-bottom: 10px;
+}
+
+.Our-Popular-Tours-content button {
+    margin-top: 32px;
+}
+
+.o-p-t-c-last {
+    color: #5A5A5D;
+    line-height: 26px;
+    width: 530px;
+}
+
+.Our-Popular-Tours-img {}
+
+.Our-Popular-Tours-img img {}
+
+/* Choose Your Destination section  */
+.Choose-Your-Destination {}
+
+.Choose-Your-Destination h4 {
+    color: #131318;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 24px;
+}
+
+.Choose-Your-Destination p {
+    color: rgba(19, 19, 24, 0.70);
+    text-align: center;
+    line-height: 26px;
+    width: 643px;
+    margin: 0 auto;
+    margin-bottom: 48px;
+}
+
+.img-container {
+    /* border: 2px solid red; */
+    display: grid;
+    max-width: 1560px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%;
+}
+
+.grid-item-1 {
+    grid-column: span 6;
+    grid-row: span 1;
+    /* background-image: url("../Images/Rectangle\ 5.png");
+    width: 773px;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+
+.grid-item-2 {
+    grid-column: span 6;
+    grid-row: span 1;
+
+}
+
+.grid-item-3 {
+
+    grid-column: span 4;
+    grid-row: span 1;
+
+}
+
+.grid-item-4 {
+    grid-column: span 5;
+    grid-row: span 1;
+
+}
+
+.grid-item-5 {
+    grid-column: span 3;
+    grid-row: span 1;
+
+}
+
+.grid-item-6 {
+    grid-column: span 5;
+    grid-row: span 1;
+
+}
+
+.grid-item-7 {
+    grid-column: span 7;
+    grid-row: span 1;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:600px) {
+    .container {
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .banner-section {
+        width: 100%;
+        height: 100%;
+        border-radius: 16px;
+        background: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url("../Images/Group\ 13\ \(1\)\ \(1\).png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-top: 20px;
+        margin-left: 0;
+
+    }
+
+    .banner-section h2 {
+        font-size: 1.37rem;
+        padding-top: 32px;
+    }
+
+    .banner-section p {
+        width: 100%;
+        padding: 0 10px;
+        font-size: 14px;
+    }
+
+    .banner-button {
+        width: 83%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+
+    }
+
+    .banner-button input[type="text"],
+    select {
+        width: 100%;
+        margin-bottom: 16px;
+        margin-right: 0;
+    }
+
+    .banner-button .btn-primary {
+        width: 100%;
+    }
+
+    .Our-Popular-Tours {
+        flex-direction: column;
+    }
+
+    .Our-Popular-Tours-content h4 {
+        font-size: 1.75rem;
+    }
+
+    .o-p-t-c-first,
+    .Our-Popular-Tours-content ul li,
+    .o-p-t-c-last {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .Our-Popular-Tours-img img {
+        width: 100%;
+        margin-top: 24px;
+    }
+    .Choose-Your-Destination h4{
+        font-size: 1.25rem;
+    }
+    .Choose-Your-Destination p{
+        width: 100%;
+        font-size: 14px;
+    }
+    .img-container img{
+        width: 350px;
+        height: 176px;
+    }
+    .img-container {
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(1,1fr);
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+    }
+    
+
+
+
+
+
+
+}
