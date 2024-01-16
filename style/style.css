@@ -27,10 +27,6 @@ body {
     font-weight: 700;
 }
 
-.hide {
-    display: none;
-}
-
 /* header section  */
 nav {
     display: flex;
@@ -60,7 +56,9 @@ nav {
     font-size: 2.25rem;
     font-weight: 800;
 }
-
+.responsiv-bar{
+    display: none;
+}
 .header-manue {}
 
 .header-manue ul {
@@ -237,11 +235,31 @@ select {
     height: 300px;
     background-repeat: no-repeat;
     background-size: cover; */
+    position: relative;
+}
+
+.center-text-1 {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    color: #FFF;
+    font-size: 28px;
+    font-weight: 800;
+}
+
+.center-text {
+    position: absolute;
+    top: 50%;
+    left: 37%;
+    color: #FFF;
+    font-size: 28px;
+    font-weight: 800;
 }
 
 .grid-item-2 {
     grid-column: span 6;
     grid-row: span 1;
+    position: relative;
 
 }
 
@@ -249,30 +267,35 @@ select {
 
     grid-column: span 4;
     grid-row: span 1;
+    position: relative;
 
 }
 
 .grid-item-4 {
     grid-column: span 5;
     grid-row: span 1;
+    position: relative;
 
 }
 
 .grid-item-5 {
     grid-column: span 3;
     grid-row: span 1;
+    position: relative;
 
 }
 
 .grid-item-6 {
     grid-column: span 5;
     grid-row: span 1;
+    position: relative;
 
 }
 
 .grid-item-7 {
     grid-column: span 7;
     grid-row: span 1;
+    position: relative;
 
 }
 
@@ -329,8 +352,8 @@ select {
 }
 
 .w-c-u-s-c-item-icon img {
-    width: 64px;
-    height: 64px;
+    width: 74px;
+    height: 74px;
 
 }
 
@@ -566,27 +589,33 @@ select {
     display: flex;
     justify-content: center;
 }
-.Valuable-Information{
+
+.Valuable-Information {
     width: 40%;
     margin: 0 auto;
 }
-.Valuable-Information h2{
+
+.Valuable-Information h2 {
     color: #131318;
     font-size: 30px;
     margin-bottom: 25px;
     font-weight: 700;
 }
+
 .Valuable-Information ul {
     margin-left: 50px;
 }
-.Valuable-Information ul li{}
-.Valuable-Information ul li h4{
+
+.Valuable-Information ul li {}
+
+.Valuable-Information ul li h4 {
     color: #131318;
     font-size: 20px;
     font-weight: 700;
     margin-bottom: 5px;
 }
-.Valuable-Information ul li p{
+
+.Valuable-Information ul li p {
     color: #5A5A5D;
     font-weight: 700;
     line-height: 26px;
@@ -598,22 +627,26 @@ select {
     width: 40%;
     margin: 0 auto;
 }
-.In-Depth-Articles h2{
+
+.In-Depth-Articles h2 {
     color: #131318;
     font-size: 30px;
     margin-bottom: 25px;
     font-weight: 700;
 }
+
 .In-Depth-Articles ul {
     margin-left: 50px;
 }
-.In-Depth-Articles ul li h4{
+
+.In-Depth-Articles ul li h4 {
     color: #131318;
     font-size: 20px;
     font-weight: 700;
     margin-bottom: 5px;
 }
-.In-Depth-Articles ul li p{
+
+.In-Depth-Articles ul li p {
     color: #5A5A5D;
     font-weight: 700;
     line-height: 26px;
@@ -625,6 +658,7 @@ select {
 .Newsletter {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 100px;
 }
 
 .Newsletter-form {
@@ -711,6 +745,70 @@ select {
     font-weight: 800;
 }
 
+/* footer section  */
+footer {
+    width: 100%;
+    height: 502px;
+    background: rgba(19, 19, 24, 0.05);
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo {
+    display: flex;
+    margin-bottom: 15px;
+    justify-content: center;
+}
+
+.footer-logo img {
+    width: 40px;
+    height: 46.673px;
+    margin-left: 16px;
+}
+
+.footer-logo h3 {
+    color: #131318;
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.footer-logo span {
+    color: #FF5400;
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+footer p {
+    color: #5A5A5D;
+    line-height: 26px;
+    width: 769px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 33px;
+}
+
+footer ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+footer ul li {
+    font-size: 30px;
+    margin-right: 50px;
+}
+
+footer hr {
+    width: 872px;
+    margin: 50px auto;
+}
+
+footer h6 {
+    color: #131318;
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+}
 
 
 
@@ -725,12 +823,36 @@ select {
 
 
 
+
+/* responsive fild  */
 
 
 @media screen and (max-width:600px) {
     .container {
         margin: 0 auto;
         width: 90%;
+    }
+    nav{
+        margin-bottom: 24px;
+    }
+
+    .header-logo img {
+        width: 28.724px;
+        height: 33.516px;
+    }
+
+    .header-logo h3,
+    .header-logo span{
+        font-size: 21.543px;
+    }
+
+    .header-manue ul{}
+
+    .header-manue ul li {
+        display: none;
+    }
+    .header-manue ul .responsiv-bar{
+        display: block;
     }
 
     .banner-section {
@@ -821,6 +943,31 @@ select {
         /* justify-content: center; */
         align-items: center;
     }
+
+    .center-text-1 {
+        position: absolute;
+        top: 40%;
+        left: 37%;
+    }
+
+    .center-text {
+        position: absolute;
+        top: 40%;
+        left: 37%;
+    }
+
+    .center-text-3 {
+        position: absolute;
+        top: 40%;
+        left: 30%;
+    }
+
+    .center-text-4 {
+        position: absolute;
+        left: 22.5%;
+    }
+
+
 
     .Why-Choose-Us-section {
         margin-bottom: 24px;
@@ -975,8 +1122,7 @@ select {
         margin-bottom: 24px;
     }
 
-    .Travel-Tips-and-Insights-caption {
-    }
+    .Travel-Tips-and-Insights-caption {}
 
     .Travel-Tips-and-Insights-caption h2 {
         font-size: 20px;
@@ -995,39 +1141,48 @@ select {
         width: 100%;
         margin-bottom: 24px;
     }
+
     .Valuable-Information h2 {
         font-size: 20px;
     }
-    .Valuable-Information ul{
+
+    .Valuable-Information ul {
         margin-left: 20px;
     }
-    .Valuable-Information ul li h4{
+
+    .Valuable-Information ul li h4 {
         font-size: 17px;
     }
-    .Valuable-Information ul li p{
+
+    .Valuable-Information ul li p {
         width: 100%;
         font-size: 14px;
     }
-    
+
     .In-Depth-Articles {
         width: 100%;
     }
-    .In-Depth-Articles h2{
+
+    .In-Depth-Articles h2 {
         font-size: 20px;
     }
-    .In-Depth-Articles ul{
+
+    .In-Depth-Articles ul {
         margin-left: 20px;
     }
-    .In-Depth-Articles ul li h4{
+
+    .In-Depth-Articles ul li h4 {
         font-size: 17px;
     }
-    .In-Depth-Articles ul li p{
+
+    .In-Depth-Articles ul li p {
         width: 100%;
         font-size: 14px;
     }
 
     .Newsletter {
         flex-direction: column;
+        margin-bottom: 24px;
     }
 
     .Newsletter-form {
@@ -1081,6 +1236,13 @@ select {
         font-size: 21.138px;
     }
 
+    footer p {
+        width: 100%;
+    }
+
+    footer hr {
+        width: 100%;
+    }
 
 
 
